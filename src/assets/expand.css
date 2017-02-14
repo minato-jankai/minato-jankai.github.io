@@ -107,17 +107,18 @@ body {
 }
 
 .mg-data-table table {
-  width: 100%;
-  max-width: 100%;
-}
-
-.mg-data-table tbody {
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-.mg-data-table table {
+    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
+}
+
+.mg-data-table thead tr {
+    position: relative;
+}
+
+tbody {
+    overflow-x: auto;
+    font-size: x-small;
 }
 
 .mg-data-table table, th, td {
