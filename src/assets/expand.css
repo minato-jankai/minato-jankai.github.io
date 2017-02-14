@@ -31,7 +31,7 @@ body {
   animation: spin 2s linear infinite;
 }
 
-.hide {
+.hidden {
   display: none;
 }
 
@@ -109,14 +109,13 @@ body {
 .mg-data-table table {
     width: 100%;
     max-width: 100%;
-    border-collapse: collapse;
 }
 
 .mg-data-table thead tr {
     position: relative;
 }
 
-tbody {
+.mg-data-table tbody {
     overflow-x: auto;
     font-size: x-small;
 }

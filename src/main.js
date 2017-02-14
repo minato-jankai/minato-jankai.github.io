@@ -1,15 +1,25 @@
+/*
+// 現時点ではVuejsを使用していないのでコメントアウト
 import Vue from 'vue';
 import App from './App.vue';
+*/
 import MG from 'metrics-graphics';
 
+/*
+// 現時点ではBootStrapも使用していないのでコメントアウト
 // bootstrap, d3はes6 importには対応していないのでrequireする
 require('bootstrap');
 require('bootstrap/dist/css/bootstrap.css');
+*/
+
 require('metrics-graphics/dist/metricsgraphics.css');
 let d3 = require('d3');
 
+$('#loader').removeClass('hidden');
+
 d3.json('/data/records.json', (data) => {
   d3.json('/data/people.json', (people) => {
+
     let peopleArray = {};
     let tableArray = [];
 
@@ -102,10 +112,14 @@ d3.json('/data/records.json', (data) => {
     .number({accessor: 'Ogu', label: 'Ogu', width: 50})
     .text({accessor: 'notes', label: 'Notes', width: 100})
     .display();
+
+    $('#loader').addClass('hidden'); // ローディングアイコン非表示
   });
 });
 
+/*
 new Vue({
   el: '#app',
   render: h => h(App)
 });
+*/
