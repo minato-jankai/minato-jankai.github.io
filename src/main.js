@@ -90,7 +90,7 @@ d3.json('/data/records.json', (data) => {
         show_tooltips: true
     })
     .target('#table')
-    .title({accessor: 'date', label: 'date'})
+    .title({accessor: 'date', label: 'Date'})
     .number({accessor: 'Mot', label: 'Mot'})
     .number({accessor: 'Jin', label: 'Jin'})
     .number({accessor: 'Koj', label: 'Koj'})
@@ -100,10 +100,8 @@ d3.json('/data/records.json', (data) => {
     .number({accessor: 'Yam', label: 'Yam'})
     .number({accessor: 'Kos', label: 'Kos'})
     .number({accessor: 'Ogu', label: 'Ogu'})
-    .text({accessor: 'notes', label: 'Notes'})
+    .text({accessor: 'notes', label: 'Notes', min_width: 200})
     .display();
-
-    console.dir(dataArray);
   });
 });
 
