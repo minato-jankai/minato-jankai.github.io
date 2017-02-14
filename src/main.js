@@ -65,7 +65,7 @@ d3.json('/data/records.json', (data) => {
       description: '記録開始から今日に至るまでの累積スコアです。',
       data: dataArray,
       width: 600,
-      height: 600,
+      height: 300,
       target: '#root',
       legend_target: '.legend',
       legend: people,
