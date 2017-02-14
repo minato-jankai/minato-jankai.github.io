@@ -1,0 +1,17 @@
+{
+  "date": "yyyy-MM-dd",
+  "record": [{
+    "name": "PersonA",
+    "score": 2000
+  }, {
+    "name": "PersonB",
+    "score": -5000
+  }, {
+    "name": "PersonC",
+    "score": -3000
+  }, {
+    "name": "personD",
+    "score": 6000
+  }],
+  "notes": ""
+}
