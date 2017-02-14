@@ -13,6 +13,7 @@ body {
 #page {
   margin: 0 auto;
   width: 100%;
+  max-width: 100%;
   font-family: "メイリオ", Meiryo, Helvetica, sans-serif;
 }
 
@@ -105,15 +106,20 @@ body {
     color: black;
 }
 
-.mg-data-table > table {
+.mg-data-table table {
+  width: 100%;
   max-width: 100%;
 }
 
-.mg-data-table > tbody {
+.mg-data-table tbody {
     overflow-x: auto;
     white-space: nowrap;
 }
 
-.mg-data-table > tr:first-child td {
-    position: sticky;
+.mg-data-table table {
+    border-collapse: collapse;
+}
+
+.mg-data-table table, th, td {
+    border: 1px solid gray;
 }
