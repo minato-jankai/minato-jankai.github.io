@@ -65,8 +65,8 @@ d3.json('/data/records.json', (data) => {
       title: '累積スコア遷移',
       description: '記録開始から今日に至るまでの累積スコアです。',
       data: dataArray,
-      width: 600,
       height: 300,
+      full_width: true,
       target: '#root',
       legend_target: '.legend',
       legend: people,
@@ -90,17 +90,17 @@ d3.json('/data/records.json', (data) => {
         show_tooltips: true
     })
     .target('#table')
-    .title({accessor: 'date', label: 'Date'})
-    .number({accessor: 'Mot', label: 'Mot'})
-    .number({accessor: 'Jin', label: 'Jin'})
-    .number({accessor: 'Koj', label: 'Koj'})
-    .number({accessor: 'End', label: 'End'})
-    .number({accessor: 'Shk', label: 'Shk'})
-    .number({accessor: 'Oka', label: 'Oka'})
-    .number({accessor: 'Yam', label: 'Yam'})
-    .number({accessor: 'Kos', label: 'Kos'})
-    .number({accessor: 'Ogu', label: 'Ogu'})
-    .text({accessor: 'notes', label: 'Notes', min_width: 200})
+    .title({accessor: 'date', label: 'Date', width: 50})
+    .number({accessor: 'Mot', label: 'Mot', width: 50})
+    .number({accessor: 'Jin', label: 'Jin', width: 50})
+    .number({accessor: 'Koj', label: 'Koj', width: 50})
+    .number({accessor: 'End', label: 'End', width: 50})
+    .number({accessor: 'Shk', label: 'Shk', width: 50})
+    .number({accessor: 'Oka', label: 'Oka', width: 50})
+    .number({accessor: 'Yam', label: 'Yam', width: 50})
+    .number({accessor: 'Kos', label: 'Kos', width: 50})
+    .number({accessor: 'Ogu', label: 'Ogu', width: 50})
+    .text({accessor: 'notes', label: 'Notes', width: 100})
     .display();
   });
 });
