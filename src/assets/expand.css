@@ -1,0 +1,65 @@
+/* @see https://github.com/mozilla/metrics-graphics/wiki#frequently-asked-questions */
+.mg-line6-color {
+    stroke: steelblue;
+}
+.mg-area6-color {
+    fill: steelblue;
+}
+.mg-hover-line6-color {
+    fill: steelblue;
+}
+.mg-line6-legend-color {
+    color: steelblue;
+}
+
+.mg-line7-color {
+    stroke: pink;
+}
+.mg-area7-color {
+    fill: pink;
+}
+.mg-hover-line7-color {
+    fill: pink;
+}
+.mg-line7-legend-color {
+    color: pink;
+}
+
+.mg-line8-color {
+    stroke: orange;
+}
+.mg-area8-color {
+    fill: orange;
+}
+.mg-hover-line8-color {
+    fill: orange;
+}
+.mg-line8-legend-color {
+    color: orange;
+}
+
+.mg-line9-color {
+    stroke: green;
+}
+.mg-area9-color {
+    fill: green;
+}
+.mg-hover-line9-color {
+    fill: green;
+}
+.mg-line9-legend-color {
+    color: green;
+}
+
+.mg-line10-color {
+    stroke: black;
+}
+.mg-area10-color {
+    fill: black;
+}
+.mg-hover-line10-color {
+    fill: black;
+}
+.mg-line10-legend-color {
+    color: black;
+}

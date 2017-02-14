@@ -1,0 +1,15 @@
+# JavaScript Library related
+node_modules/
+
+# JsDoc related
+out/
+
+# Babel/Webpack related
+# dist/
+
+# Backup / Temporaly related
+*.swp
+*.bak
+
+# Mac user related
+.DS_Store
